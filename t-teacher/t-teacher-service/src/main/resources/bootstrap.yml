@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: teacher
+  datasource:
+    #驱动
+    driver-class-name: org.gjt.mm.mysql.Driver
+    #数据源
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://192.168.31.57:3306/school?useUnicode=true&useSSL=true&autoReconnect=true&failOverReadOnly=false
+    username: root
+    password: root123
+
+server:
+  port: 7001
+  servlet:
+    context-path: /teacher
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    lease-renewal-interval-in-seconds: 5  #eureka client发送心跳给server端的频率（默认30秒）
+    lease-expiration-duration-in-seconds: 10  #eureka client发送心跳给server端后，续约到期时间（默认90秒）
+  client:
+    serviceUrl:
+      defaultZone: http://${spring.cloud.client.ip-address}:8082/eureka/
