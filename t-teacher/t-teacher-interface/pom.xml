@@ -9,9 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>t-teacher-interface</artifactId>
     <groupId>org.example</groupId>
+    <artifactId>t-teacher-interface</artifactId>
     <version>0.0.1</version>
+
 
     <dependencies>
         <dependency>
@@ -24,8 +25,7 @@
             <version>0.0.1</version>
         </dependency>
     </dependencies>
-
     <build>
-        <finalName>vp-poprocess-interface</finalName>
+        <finalName>t-teacher-interface</finalName>
     </build>
 </project>

@@ -12,8 +12,8 @@
     <artifactId>t-teacher</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>t-teacher-interface</module>
         <module>t-teacher-service</module>
+        <module>t-teacher-interface</module>
     </modules>
 
     <properties>
