@@ -22,6 +22,11 @@ public class TeacherImplService extends ServiceImpl<TeacherMapper, Teacher>  imp
 
     @Override
     public Teacher findTeacher(String id) {
-        return this.baseMapper.selectById(id);
+        return baseMapper.selectById(id);
+    }
+
+    @Override
+    public Teacher selectTeacher(Teacher teacher) {
+        return baseMapper.selectTeacherByName(teacher.getName());
     }
 }

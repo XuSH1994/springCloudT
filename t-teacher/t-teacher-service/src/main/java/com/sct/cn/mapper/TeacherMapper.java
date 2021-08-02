@@ -2,6 +2,7 @@ package com.sct.cn.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.sct.cn.business.teacher.entity.Teacher;
+import org.apache.poi.ss.formula.functions.T;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -17,4 +18,6 @@ public interface TeacherMapper extends BaseMapper<Teacher> {
      * @return
      */
 //    Teacher selectById(Integer id);
+
+    Teacher selectTeacherByName(String name);
 }

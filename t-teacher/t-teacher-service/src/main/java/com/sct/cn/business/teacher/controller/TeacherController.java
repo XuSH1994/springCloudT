@@ -3,16 +3,19 @@ package com.sct.cn.business.teacher.controller;
 import com.sct.cn.business.teacher.entity.Teacher;
 import com.sct.cn.business.teacher.service.TeacherService;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.annotations.ApiIgnore;
 
 /**
  * Teacher前端控制器
  */
 @RestController
-@RequestMapping("/teacher")
+@RequestMapping("/teacherController")
 @Api(value = "教师",tags = "教师")
 @Validated  //参数校验
 public class TeacherController {
@@ -25,4 +28,20 @@ public class TeacherController {
     public Teacher getTeacherById(@PathVariable("id") String id){
         return teacherService.findTeacher(id);
     }
+
+    @RequestMapping("/getTecaherFeign")
+    @ApiIgnore
+    public Teacher getTecaherFeign(String id){
+        return teacherService.findTeacher(id);
+    }
+
+    @PostMapping("/postTeacher")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "name",value = "教师名称",paramType = "qurey",required = true)
+    })
+    public Teacher postTeacher(Teacher teacher){
+        return teacherService.selectTeacher(teacher);
+    }
+
+
 }

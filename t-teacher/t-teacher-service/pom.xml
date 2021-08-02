@@ -29,18 +29,19 @@
             <artifactId>commonsT-frame</artifactId>
             <version>0.0.1</version>
         </dependency>
+        <!--kafka-->
         <!--<dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bus-kafka</artifactId>
         </dependency>-->
-        <dependency>
+        <!--配置中心-->
+        <!--<dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
-            <version>2.1.4.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -56,19 +57,31 @@
             <artifactId>spring-cloud-starter-ribbon</artifactId>
             <version>1.4.6.RELEASE</version>
         </dependency>
+
+        <!--<dependency>
+            <groupId>com.oracle.ojdbc</groupId>
+            <artifactId>ojdbc8</artifactId>
+            <version>19.3.0.0</version>
+        </dependency>-->
+
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.6</version>
+        </dependency>
+        <!--数据源-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-netflix-eureka-client</artifactId>
-            <version>2.1.4.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>
+                spring-cloud-starter-netflix-eureka-client
+            </artifactId>
         </dependency>
 
         <dependency>
@@ -93,8 +106,6 @@
             <artifactId>commons-math3</artifactId>
             <version>3.3</version>
         </dependency>
-
-
         <!--pdf-->
         <dependency>
             <groupId>org.xhtmlrenderer</groupId>
@@ -144,6 +155,21 @@
             <artifactId>freemarker</artifactId>
             <version>2.3.29</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.xhtmlrenderer/flying-saucer-pdf -->
+        <!--        <dependency>-->
+        <!--            <groupId>org.xhtmlrenderer</groupId>-->
+        <!--            <artifactId>flying-saucer-pdf</artifactId>-->
+        <!--            <version>9.1.5</version>-->
+        <!--        </dependency>-->
+
+        <!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.xhtmlrenderer/flying-saucer-pdf-itext5 &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.xhtmlrenderer</groupId>-->
+        <!--            <artifactId>flying-saucer-pdf-itext5</artifactId>-->
+        <!--            <version>9.1.5</version>-->
+        <!--        </dependency>-->
+
     </dependencies>
 
     <build>

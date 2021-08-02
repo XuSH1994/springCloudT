@@ -24,4 +24,6 @@ public interface TeacherService extends IService<Teacher> {
     Teacher findTeacher(String id);
 
 
+
+    Teacher selectTeacher(Teacher teacher);
 }

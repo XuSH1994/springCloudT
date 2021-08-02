@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/commonsT-all/commonsT-frame/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/commonsT-all/commonsT-frame/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/commonsT-all/commonsT/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/commonsT-all/commonsT/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eurekaT/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eurekaT/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/t-teacher/t-teacher-interface/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/t-teacher/t-teacher-interface/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/t-teacher/t-teacher-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/t-teacher/t-teacher-service/src/main/resources" charset="UTF-8" />
   </component>

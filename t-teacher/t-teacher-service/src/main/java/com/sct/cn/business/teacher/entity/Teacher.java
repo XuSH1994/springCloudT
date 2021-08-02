@@ -36,6 +36,7 @@ public class Teacher{
     /**
      * 教学科目
      */
+    @TableField(value = "teachingSubjects")
     private String teachingSubjects;
 
     /**

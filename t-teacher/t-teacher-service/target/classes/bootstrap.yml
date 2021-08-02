@@ -3,7 +3,8 @@ spring:
     name: teacher
   datasource:
     #驱动
-    driver-class-name: org.gjt.mm.mysql.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #    driver-class-name: org.gjt.mm.mysql.Driver
     #数据源
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:mysql://192.168.31.57:3306/school?useUnicode=true&useSSL=true&autoReconnect=true&failOverReadOnly=false

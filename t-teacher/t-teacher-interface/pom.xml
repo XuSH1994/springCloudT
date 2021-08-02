@@ -3,35 +3,29 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>springCloudT</artifactId>
+        <artifactId>t-teacher</artifactId>
         <groupId>org.example</groupId>
         <version>0.0.1</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>t-teacher-interface</artifactId>
-
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
+    <groupId>org.example</groupId>
+    <version>0.0.1</version>
 
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.example</groupId>
             <artifactId>commonsT</artifactId>
             <version>0.0.1</version>
         </dependency>
-
-
-
     </dependencies>
 
-
+    <build>
+        <finalName>vp-poprocess-interface</finalName>
+    </build>
 </project>

@@ -2,7 +2,7 @@
 /shelf/
 /workspace.xml
 # Datasource local storage ignored files
-/../../../../:\WorkSpace\springCloudT\.idea/dataSources/
+/../../../../../:\File\Idea_WorkSpace\springCloudT\.idea/dataSources/
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
