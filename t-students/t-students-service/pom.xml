@@ -3,30 +3,24 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>springCloudT</artifactId>
+        <artifactId>t-students</artifactId>
         <groupId>org.example</groupId>
         <version>0.0.1</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>t-teacher-service</artifactId>
-
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
+    <artifactId>t-students-service</artifactId>
+    <version>0.0.1</version>
 
     <dependencies>
         <dependency>
             <groupId>org.example</groupId>
-            <artifactId>t-teacher-interface</artifactId>
+            <artifactId>commonsT-frame</artifactId>
             <version>0.0.1</version>
-            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.example</groupId>
-            <artifactId>commonsT-frame</artifactId>
+            <artifactId>t-students-interface</artifactId>
             <version>0.0.1</version>
         </dependency>
         <!--kafka-->
@@ -155,31 +149,5 @@
             <artifactId>freemarker</artifactId>
             <version>2.3.29</version>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.xhtmlrenderer/flying-saucer-pdf -->
-        <!--        <dependency>-->
-        <!--            <groupId>org.xhtmlrenderer</groupId>-->
-        <!--            <artifactId>flying-saucer-pdf</artifactId>-->
-        <!--            <version>9.1.5</version>-->
-        <!--        </dependency>-->
-
-        <!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.xhtmlrenderer/flying-saucer-pdf-itext5 &ndash;&gt;-->
-        <!--        <dependency>-->
-        <!--            <groupId>org.xhtmlrenderer</groupId>-->
-        <!--            <artifactId>flying-saucer-pdf-itext5</artifactId>-->
-        <!--            <version>9.1.5</version>-->
-        <!--        </dependency>-->
-
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.2.5.RELEASE</version>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>

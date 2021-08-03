@@ -18,6 +18,7 @@
         <module>eurekaT</module>
         <module>commonsT-all</module>
         <module>t-teacher</module>
+        <module>t-students</module>
     </modules>
 
     <!-- 版本控制 -->
@@ -94,7 +95,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.16</version>
+                <version>2.22.2</version>
                 <configuration>
                     <skip>true</skip>
                 </configuration>
@@ -102,11 +103,10 @@
         </plugins>
     </build>
 
-    <!--<repositories>
+    <repositories>
         <repository>
             <id>central</id>
-            <name>central repository</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <url>https://maven.aliyun.com/repository/central</url>
             <layout>default</layout>
             <releases>
                 <enabled>true</enabled>
@@ -117,7 +117,41 @@
                 <updatePolicy>never</updatePolicy>
             </snapshots>
         </repository>
-    </repositories>-->
+        <repository>
+            <id>spring</id>
+            <url>https://maven.aliyun.com/repository/spring</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>public</id>
+            <url>https://maven.aliyun.com/repository/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>spring-plugin</id>
+            <url>https://maven.aliyun.com/repository/spring-plugin</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>lac-group</id>
+            <url>https://atc.bmw-brilliance.cn/nexus/repository/BBA_Repository</url>
+        </repository>
+    </repositories>
 
 
 </project>

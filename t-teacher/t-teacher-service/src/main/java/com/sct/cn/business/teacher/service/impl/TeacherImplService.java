@@ -4,7 +4,9 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.sct.cn.business.teacher.entity.Teacher;
 import com.sct.cn.business.teacher.service.TeacherService;
+import com.sct.cn.dto.TeacherDTO;
 import com.sct.cn.mapper.TeacherMapper;
+import com.sct.cn.vo.TeacherVO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Service;
@@ -26,7 +28,7 @@ public class TeacherImplService extends ServiceImpl<TeacherMapper, Teacher>  imp
     }
 
     @Override
-    public Teacher selectTeacher(Teacher teacher) {
+    public TeacherVO selectTeacher(TeacherDTO teacher) {
         return baseMapper.selectTeacherByName(teacher.getName());
     }
 }
