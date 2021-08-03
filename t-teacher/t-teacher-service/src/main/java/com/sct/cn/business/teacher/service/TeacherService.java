@@ -3,6 +3,8 @@ package com.sct.cn.business.teacher.service;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.sct.cn.business.teacher.entity.Teacher;
+import com.sct.cn.dto.TeacherDTO;
+import com.sct.cn.vo.TeacherVO;
 
 /**
  * Teacher服务类
@@ -25,5 +27,5 @@ public interface TeacherService extends IService<Teacher> {
 
 
 
-    Teacher selectTeacher(Teacher teacher);
+    TeacherVO selectTeacher(TeacherDTO teacher);
 }

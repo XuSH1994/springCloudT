@@ -2,6 +2,8 @@ package com.sct.cn.business.teacher.controller;
 
 import com.sct.cn.business.teacher.entity.Teacher;
 import com.sct.cn.business.teacher.service.TeacherService;
+import com.sct.cn.dto.TeacherDTO;
+import com.sct.cn.vo.TeacherVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -39,7 +41,7 @@ public class TeacherController {
     @ApiImplicitParams({
             @ApiImplicitParam(name = "name",value = "教师名称",paramType = "qurey",required = true)
     })
-    public Teacher postTeacher(Teacher teacher){
+    public TeacherVO postTeacher(TeacherDTO teacher){
         return teacherService.selectTeacher(teacher);
     }
 
