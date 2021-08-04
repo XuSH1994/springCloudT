@@ -39,6 +39,7 @@ public class TeacherController {
 
     @PostMapping("/postTeacher")
     @ApiImplicitParams({
+            @ApiImplicitParam(name = "id",value = "教师id",paramType = "qurey",required = true),
             @ApiImplicitParam(name = "name",value = "教师名称",paramType = "qurey",required = true)
     })
     public TeacherVO postTeacher(TeacherDTO teacher){

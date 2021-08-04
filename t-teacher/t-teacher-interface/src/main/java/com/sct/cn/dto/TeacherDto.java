@@ -2,21 +2,27 @@ package com.sct.cn.dto;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
 
+/**
+ * 教师entity
+ */
+@ApiModel("教师入参")
 @Data
-@ApiModel(value = "老师入参")
-public class TeacherDto implements Serializable {
-    private static final long serialVersionUID = 1L;
+public class TeacherDTO implements Serializable {
 
+    private static final long serialVersionUID = 3174898666629330864L;
     /**
      * 教师id
      */
-    @ApiModelProperty("主键")
+    @ApiModelProperty("教师id")
     private Integer id;
 
     /**

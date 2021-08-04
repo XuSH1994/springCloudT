@@ -1,5 +1,7 @@
 package com.sct.cn.business.teacher.service.impl;
 
+import com.alibaba.fastjson.JSONObject;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.sct.cn.business.teacher.entity.Teacher;
@@ -28,7 +30,17 @@ public class TeacherImplService extends ServiceImpl<TeacherMapper, Teacher>  imp
     }
 
     @Override
-    public TeacherVO selectTeacher(TeacherDTO teacher) {
-        return baseMapper.selectTeacherByName(teacher.getName());
+    public TeacherVO selectTeacher(TeacherDTO teacherDTO) {
+        QueryWrapper queryWrapper = new QueryWrapper();
+        if(teacherDTO != null){
+            if (teacherDTO.getId() != null && !"".equals(teacherDTO.getId())){
+                queryWrapper.eq("id",teacherDTO.getId());
+            }
+            if (teacherDTO.getName() != null && !"".equals(teacherDTO.getName())){
+                queryWrapper.eq("name",teacherDTO.getName());
+            }
+            return JSONObject.parseObject(JSONObject.toJSONString(baseMapper.selectOne(queryWrapper)),TeacherVO.class);
+        }
+        return null;
     }
 }

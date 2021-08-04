@@ -1,8 +1,11 @@
 package com.sct.cn.mapper;
 
-import org.apache.ibatis.annotations.Mapper;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.sct.cn.bussiness.entity.Student;
+import org.springframework.stereotype.Repository;
 
-@Mapper
-public interface StudentMapper {
+@Repository
+public interface StudentMapper extends BaseMapper<Student> {
 
+    Integer selectHeadmasterIdByName(String name);
 }
